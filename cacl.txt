@@ -1,0 +1,5 @@
+(MATH[NUMBER1=(20, 3, unknown), NUMBER2=(10, unknown, unknown), OPERATOR='add']
+  (NUM[SEM=(20, 3, unknown)] (DIZAINE[SEM=10] dix) (UNITE[SEM=3] trois))
+  (OPERATEUR[SEM='add'] plus)
+  (NUM[SEM=(10, unknown, unknown)] (DIZAINE[SEM=10] dix)))
+Comprehension finished

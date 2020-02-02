@@ -1,0 +1,25 @@
+oUTPUT
+
+cinquante multiplie quatre
+
+(MATH[NUMBER1=(50, unknown, unknown), NUMBER2=(unknown, 4, unknown), OPERATOR='times']
+  (NUM[SEM=(50, unknown, unknown)] (DIZAINE[SEM=50] cinquante))
+  (OPERATEUR[SEM='times'] multiplie)
+  (NUM[SEM=(unknown, 4, unknown)] (UNITE[SEM=4] quatre)))
+
+(MATH[NUMBER1=(unknown, 3, unknown), NUMBER2=(10, unknown, unknown), OPERATOR='add']
+  (NUM[SEM=(unknown, 3, unknown)] (UNITE[SEM=3] trois))
+  (OPERATEUR[SEM='add'] plus)
+  (NUM[SEM=(10, unknown, unknown)] (DIZAINE[SEM=10] dix)))
+Comprehension finished
+
+(MATH[NUMBER1=(unknown, 3, unknown), NUMBER2=(unknown, 1, unknown), OPERATOR='subtract']
+  (NUM[SEM=(unknown, 3, unknown)] (UNITE[SEM=3] trois))
+  (OPERATEUR[SEM='subtract'] moins)
+  (NUM[SEM=(unknown, 1, unknown)] (UNITE[SEM=1] un)))
+
+(MATH[NUMBER1=(unknown, 3, unknown), NUMBER2=(unknown, 1, unknown), OPERATOR='subtract']
+  (NUM[SEM=(unknown, 3, unknown)] (UNITE[SEM=3] trois))
+  (OPERATEUR[SEM='subtract'] moins)
+  (NUM[SEM=(unknown, 1, unknown)] (UNITE[SEM=1] un)))
+

@@ -1,0 +1,41 @@
+%start OPERATION
+
+OPERATION -> MATH[NUMBER1=?n, OPERATOR=?o, NUMBER2=?m]
+
+MATH[NUMBER1=?ch1, OPERATOR=?op, NUMBER2=?ch2] -> NUM[SEM=?ch1] OPERATEUR[SEM=?op] NUM[SEM=?ch2]
+NUM[SEM=(?d + 'unknown' + 'unknown')] -> DIZAINE[SEM=?d]
+NUM[SEM=('unknown' + ?u + 'unknown')] -> UNITE[SEM=?u]
+NUM[SEM=('unknown' + 'unknown' + ?a)] -> AUTRE[SEM=?a]
+NUM[SEM=(?d + ?u + 'unknown')] -> DIZAINE[SEM=?d] UNITE[SEM=?u]
+
+
+UNITE[SEM=1]->'un'
+UNITE[SEM=2]->'deux'
+UNITE[SEM=3]->'trois'
+UNITE[SEM=4]->'quatre'
+UNITE[SEM=5]->'cinq'
+UNITE[SEM=6]->'six'
+UNITE[SEM=7]->'sept'
+UNITE[SEM=8]->'huit'
+UNITE[SEM=9]->'neuf'
+
+AUTRE[SEM=11]->'onze'
+AUTRE[SEM=12]->'douze'
+AUTRE[SEM=13]->'treize'
+AUTRE[SEM=14]->'quatorze'
+AUTRE[SEM=15]->'quinze'
+AUTRE[SEM=16]->'seize'
+
+DIZAINE[SEM=10]->'dix'
+DIZAINE[SEM=20]->'vingt'
+DIZAINE[SEM=30]->'trente'
+DIZAINE[SEM=40]->'quarante'
+DIZAINE[SEM=50]->'cinquante'
+DIZAINE[SEM=50]->'soixante'
+
+OPERATEUR[SEM='add'] -> 'plus'
+OPERATEUR[SEM='subtract'] -> 'moins'
+OPERATEUR[SEM='times'] -> 'multiplié par' | 'fois' | 'multiplie'
+OPERATEUR[SEM='divide'] -> 'divise' | 'divisé par' | 'sur' 
+OPERATEUR[SEM='power'] -> 'puissance'
+OPERATEUR[SEM='modulo'] -> 'modulo'
